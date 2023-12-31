@@ -1,0 +1,45 @@
+<div class="router-booking-forms">
+  <form>
+    <fieldset >
+      <legend>Car Booking</legend>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Select Car Type</label>
+        <select id="" title="select" class="form-select" (change)="selectCarType(carType.value)" #carType>
+          <option disabled selected>Select Car Type</option>
+          <option value="Sedan">Sedan</option>
+          <option value="Family">Family</option>
+          <option value="SUV">SUV</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">No.of Seats</label>
+        <select id="" title="select" class="form-select" (change)="selectSeats(seats.value)" #seats>
+          <option disabled selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Select Hours</label>
+        <select id="" title="select" class="form-select" (change)="selectHours(hours.value)"  #hours>
+          <option disabled selected>Select Hours</option>
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+
+      <div class="mb-3 button">
+        <span>Total Cost (&#8377;)</span>
+        <span class="amount" #spanAmount>0</span>
+      </div>
+
+    </fieldset>
+  </form>
+</div>

@@ -1,0 +1,62 @@
+<table class="table table-bordered caption-top">
+  <caption>
+    Table Caption - Employee Details
+  </caption>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Designation</th>
+      <th>Location</th>
+      <th>Address</th>
+      @if(isShowButton){
+      <th>Salary</th>
+      }
+    </tr>
+  </thead>
+  <tbody>
+    @for(data of employeeDetails; track data.employee_id){
+    <tr>
+      <td>{{ data.employee_id }}</td>
+      <td>{{ data.employee_name }}</td>
+      <td>{{ data.employee_designation }}</td>
+      <td>{{ data.employee_location }}</td>
+      <td>{{ data.employee_address }}</td>
+      @if(isShowButton){
+      <td>{{ data.employee_salary }}</td>
+      }
+    </tr>
+    }
+    <tr>
+      <td>
+        @if(isShowButton){
+        <button
+          class="showButton"
+          type="button"
+          title="show-salary"
+          (click)="showSalary()"
+        >
+          Hide
+        </button>
+        } @else{
+        <button
+          class="showButton"
+          type="button"
+          title="hide-salary"
+          (click)="hideSalary()"
+        >
+          Show
+        </button>
+        }
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br /><br /><br />
+<div class="content">
+  With this I have completed my tasks based on Binding and Directives which gave
+  by Saraswathi on the last session. Separated the tasks with the angular custom
+  modules with the usage of this I have loaded each of the task whenever it's
+  needed.
+</div>
+<br /><br /><br /><br /><br />

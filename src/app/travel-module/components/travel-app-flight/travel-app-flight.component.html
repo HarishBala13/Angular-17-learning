@@ -1,0 +1,46 @@
+<div class="router-booking-forms">
+  <form>
+    <fieldset >
+      <legend>Flight reservation Form</legend>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Select Type of Flight</label>
+        <select id="" title="select" class="form-select" (change)="selectFlightType(flightType.value)" #flightType>
+          <option disabled selected>Select type of flight</option>
+          <option value="Business">Business</option>
+          <option value="Economic">Economic</option>
+          <option value="Elite">Elite</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">No.of Seats</label>
+        <select id="" title="select" class="form-select" (change)="selectSeats(seats.value)" #seats>
+          <option disabled selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Travel Experience</label>
+        <select id="" title="select" class="form-select">
+          <option disabled selected>First time to travel in flight?</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="mb-3 button">
+        <span>Total Cost (&#8377;)</span>
+        <span class="amount" #spanAmount>0</span>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+

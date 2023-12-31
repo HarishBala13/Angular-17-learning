@@ -1,0 +1,45 @@
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-container .ticket-booking-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 0 0 0;
+}
+.flex-container .ticket-booking-buttons button{
+  outline: none;
+  border: 0;
+  background: linear-gradient(-45deg, deepskyblue, deeppink);
+  border-radius: 9999px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: hsl(0 100% 100%);
+  text-shadow: 0 2px 5px indigo;
+  padding: 20px 40px 20px 40px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.flex-container .ticket-booking-buttons button:hover{
+  transform: scale(1.2);
+}
+.flex-container .ticket-details{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #4b0082, #ba63f8);
+  color: hsl(0 100% 100%);
+  padding: 2rem;
+  letter-spacing: 2px;
+}
+.flex-container .ticket-details span{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.flex-container .ticket-details p{
+  font-size: 15px;
+}
+

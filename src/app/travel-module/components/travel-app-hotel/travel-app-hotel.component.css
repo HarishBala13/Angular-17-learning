@@ -1,0 +1,27 @@
+.router-booking-forms{
+  background-color: indigo;
+  color: white;
+  padding: 4rem;
+  margin-top: 20px;
+  box-shadow: 15px 20px 1rem rgba(0,0,0,0.3);
+  border-radius: 22px;
+}
+.router-booking-forms fieldset legend{
+  font-size: 35px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.router-booking-forms form fieldset label{
+  font-size: 18px;
+}
+.router-booking-forms form fieldset span{
+  font-size: 18px;
+  font-weight: 500;
+}
+.router-booking-forms form fieldset .amount{
+  color: hsl(120, 100%, 50%);
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 15px;
+  text-align: center;
+}

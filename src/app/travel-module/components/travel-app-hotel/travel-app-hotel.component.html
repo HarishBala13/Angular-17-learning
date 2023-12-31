@@ -1,0 +1,56 @@
+<div class="router-booking-forms">
+  <form>
+    <fieldset>
+      <legend>Hotel reservation Form</legend>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Room/Suite Type</label>
+        <select id="" title="select" class="form-select" (change)="selectRoomType(roomsType.value)" #roomsType>
+          <option disabled selected>Select Room/Suite</option>
+          <option value="Basic">Basic</option>
+          <option value="Premium">Premium</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">No.of Rooms/Suite</label>
+        <select id="" title="select" class="form-select" (change)="selectRooms(rooms.value)" #rooms>
+          <option disabled selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">No.of persons</label>
+        <select id="" title="select" class="form-select" (change)="selectPersons(persons.value)" #persons>
+          <option disabled selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label"
+          >Restaurant facilities</label
+        >
+        <select id="" title="select" class="form-select">
+          <option disabled selected>Do you want Restaurant facilities?</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="mb-3 button">
+        <span>Total Cost (&#8377;)</span>
+        <span class="amount" #spanAmount>0</span>
+      </div>
+    </fieldset>
+  </form>
+</div>

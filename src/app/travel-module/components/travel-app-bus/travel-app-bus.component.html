@@ -1,0 +1,45 @@
+<div class="router-booking-forms">
+  <form>
+    <fieldset >
+      <legend>Bus reservation</legend>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Select Bus Type</label>
+        <select id="" title="select" class="form-select" (change)="selectBusType(busType.value)" #busType>
+          <option disabled selected>Select Bus Type</option>
+          <option value="AC">AC</option>
+          <option value="NON/AC">NON/AC</option>
+          <option value="Sleeper">Sleeper</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">No.of Seats</label>
+        <select id="" title="select" class="form-select" (change)="selectSeats(seats.value)" #seats>
+          <option disabled selected>0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Seat Type</label>
+        <select id="" title="select" class="form-select" (change)="selectSeatType(seatType.value)"  #seatType>
+          <option disabled selected>Seat Type</option>
+          <option value="Window">Window</option>
+          <option value="Asile">Asile</option>
+          <option value="Normal">Normal</option>
+        </select>
+      </div>
+
+      <div class="mb-3 button">
+        <span>Total Cost (&#8377;)</span>
+        <span class="amount" #spanAmount>0</span>
+      </div>
+
+    </fieldset>
+  </form>
+</div>

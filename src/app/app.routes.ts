@@ -1,6 +1,5 @@
-import { Routes } from '@angular/router';
-
-export const routes: Routes = [
+import { Routes } from "@angular/router";
+ export const routes:Routes = [
   {
     path: 'travel',
     loadChildren: () =>
@@ -15,6 +14,4 @@ export const routes: Routes = [
         (employer) => employer.EmployerModuleModule
       ),
   },
-];
-
-
+ ];

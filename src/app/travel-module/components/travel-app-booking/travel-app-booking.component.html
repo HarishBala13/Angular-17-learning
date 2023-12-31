@@ -1,0 +1,26 @@
+<app-travel-app-navbar></app-travel-app-navbar>
+<div class="flex-container">
+  <div class="ticket-booking-buttons">
+    <button routerLink="book-bus" type="button" title="book-a-bus">Bus Booking</button>
+    <button routerLink="book-car" type="button" title="book-a-car">Car Booking</button>
+    <button routerLink="book-flight" type="button" title="book-a-flight">
+      Flight Booking
+    </button>
+    <button routerLink="book-hotel" type="button" title="book-a-hotel">
+      Hotel Booking
+    </button>
+  </div>
+  <div class="">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="ticket-details">
+    <span>Where&quest;</span>
+    <p>You can reach us for travel any location</p>
+    <span>When&quest;</span>
+    <p>You can reach us for plan yor trip</p>
+    <span>Transport&quest;</span>
+    <p>You can reach us for FLIGHT over other</p>
+  </div>
+</div>
+
+
