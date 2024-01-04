@@ -1,0 +1,29 @@
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+}
+.card{
+  display: grid;
+  place-items: center;
+  background-color: aliceblue;
+  margin-left: 3%;
+  margin-top: 2%;
+  padding: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+.books{
+  background-color: cornflowerblue;
+  color: white;
+  width: 20vw;
+  border-radius: 30px;
+}
+.books div{
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}

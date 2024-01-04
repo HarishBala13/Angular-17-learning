@@ -1,0 +1,32 @@
+<app-books></app-books>
+<form [formGroup]="bookDetails" (ngSubmit)="submitDetails()">
+  <label for="book-title" class="d-flex flex-column"
+    >Book Title
+    <input type="text" title="book-title" formControlName="book-title" />
+  </label>
+  <small
+    class="small"
+    *ngIf="bookDetails.controls['book-title'].errors?.['required'] && bookDetails.controls['book-title'].dirty"
+    >* Book-title is required</small
+  >
+
+  <label for="book-description" class="d-flex flex-column"
+    >Book Short Description
+    <input
+      type="text"
+      title="book-description"
+      formControlName="book-description"
+    />
+  </label>
+  <small
+    class="small"
+    *ngIf="bookDetails.controls['book-description'].errors?.['required'] && bookDetails.controls['book-description'].dirty"
+    >* Book-description is required</small
+  >
+
+  <button type="submit" title="book-submission" class="btn btn-primary"
+  [disabled]="!bookDetails.valid">
+    Submit
+  </button>
+
+</form>

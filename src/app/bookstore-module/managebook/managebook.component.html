@@ -1,0 +1,13 @@
+<app-books></app-books>
+<div class="cards">
+  @for (item of booksDetails; track $index) {
+  <div class="card">
+    <p>Id&nbsp;:&nbsp;{{ item["id"] }}</p>
+    <p>Title&nbsp;:&nbsp;{{ item["book_title"] }}</p>
+    <p>Description&nbsp;:&nbsp;{{ item["book_description"] }}</p>
+    <button class="btn btn-primary" routerLink="edit/{{ item['id'] }}">
+      Edit
+    </button>
+  </div>
+  }
+</div>

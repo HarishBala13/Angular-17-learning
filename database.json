@@ -1,0 +1,24 @@
+{
+  "booksDetails": [
+    {
+      "book_title": "Core Java ",
+      "book_description": "An Integrated Technology",
+      "id": 1
+    },
+    {
+      "book_title": "Angular",
+      "book_description": "New Angular v17",
+      "id": 2
+    },
+    {
+      "book_title": "JavaScript",
+      "book_description": "A new Beginning",
+      "id": 3
+    },
+    {
+      "book_title": "HTML 5",
+      "book_description": "New Sematics updated",
+      "id": 4
+    }
+  ]
+}
